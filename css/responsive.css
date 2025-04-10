@@ -1,0 +1,97 @@
+/* Responsive Media Queries */
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .terminal-window {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-nav {
+        padding: 15px 20px;
+    }
+    
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: var(--neon-green);
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+    
+    .nav-links {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.95);
+        top: 70px;
+        right: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+    }
+    
+    .nav-links.active {
+        right: 0;
+    }
+    
+    .nav-links li {
+        margin: 20px 0;
+    }
+    
+    .tip-card {
+        flex-direction: column;
+    }
+    
+    .tip-icon {
+        flex: 0 0 auto;
+        padding: 30px;
+        border-right: none;
+        border-bottom: 1px solid var(--neon-green);
+    }
+    
+    .terminal-window {
+        width: 95%;
+    }
+    
+    .hero-content {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .terminal-content {
+        height: 200px;
+        font-size: 1rem;
+    }
+    
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+} 
